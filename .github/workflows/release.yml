@@ -79,7 +79,7 @@ jobs:
         run: ./scripts/release/archive-source.sh
 
       - name: Upload workflow artifact
-        uses: actions/upload-artifact@v7.0.1
+        uses: actions/upload-artifact@v7.0.2
         with:
           name: SwifterKit-${{ steps.release.outputs.tag }}
           path: .build/release-artifacts/*
